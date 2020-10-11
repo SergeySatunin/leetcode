@@ -6,15 +6,13 @@ class Solution:
     def arrayPairSum(self, nums: List[int]) -> int:
         nums.sort()
 
-        i = 0
-        j = 1
-        total = 0
-        while j < len(nums):
-            total += min(nums[i], nums[j])
-            i += 2
-            j += 2
+        result = 0
 
-        return total
+        for i, num in enumerate(nums):
+            if i % 2 == 0:
+                result += num
+
+        return result
 
 input = [1,4,3,2]
 
