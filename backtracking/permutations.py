@@ -1,4 +1,5 @@
 from typing import List
+
 class Solution:
     def __init__(self):
         self.input_size = 0
